@@ -39,7 +39,7 @@ function TeamBuilder() {
 
   return (
     <div className="container">
-      <h1>Team Builer Application</h1>
+      <h1>Team Builder Application</h1>
       {members.map((member, idx) => {
         return (
           <div key={idx}>
@@ -53,12 +53,14 @@ function TeamBuilder() {
           onChange={change}
           value={formValues.memberLInitial}
           name="memberLInitial"
+          placeholder="Last Name Initial Here"
         />
         <input
           type="text"
           onChange={change}
           value={formValues.memberFName}
           name="memberFName"
+          placeholder="Full First Name Here"
         />
         <button>Submit!</button>
       </form>
